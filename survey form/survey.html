@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnFazedCodes Survey Form</title>
+    <link rel="stylesheet" href="surveystyle.css">
+</head>
+<body>
+    <div class="main">
+        <h1 id="title">UnFazedCodes Survey Form</h1>
+        
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+        <div class="main-content">
+            <div id="form-content">
+                <form id="survey-form">
+
+                    <label for="name" id="name-label">Name
+                    <input type="text" id="name" required placeholder="Enter your name"></label>
+                    
+                    <label for="email" id="email-label">Email
+                        <input type="email" id="email" required placeholder="Enter your email"></label>
+
+                        <label for="number" id="number-label">Age (optional)
+                            <input type="number" id="number"  min="10" 
+                        placeholder="Enter your age">
+                    </label>
+
+                    <label for="dropdown">Which option best describes your current role?</label>
+
+                    <select id="dropdown">
+
+                        <option value="Student">Student</option>
+
+                        <option value="full-time-learner">Full time learner</option>
+
+                        <option value="full-time-job">Full time job</option>
+                        
+                        <option value="other">Other</option>
+                    </select>
+        <fieldset>
+            <legend>Would you recommend UnFazedCodes to a friend?</legend>
+            
+            <input type="radio" name="action" checked id="definitely" value="definitely"><label for="definitely">Definitely</label><br />
+
+            <input type="radio" name="action" id="maybe" value="maybe"><label for="maybe">Maybe</label><br>
+
+            <input type="radio" name="action" id="not-sure" value="not-sure"><label for="not-sure">Not sure</label><br>
+</fieldset>
+
+<fieldset>
+    <p>What is your favorite feature of UnFazedCodes?</p>
+    
+    <select id="dropdown">
+    <option value="select">select an option</option>
+        <option value="challenges">challenges</option>
+    
+        <option value="projects">projects</option>
+    
+        <option value="community">community</option>
+    
+        <option value="other">Others</option>
+
+        
+    </select>
+
+</fieldset>
+
+        <fieldset>
+            <p>What would you like us to improve</p>
+
+            <input type="checkbox" value="video-length" id="video-length" name="video-length" checked><label for="video-length">Video length</label><br>
+
+            <input type="checkbox" value="content-qualitycontent-quality" id="content-quality" name="content-quality" ><label
+                for="content-quality">Content quality</label><br>
+
+                <input type="checkbox" value="more-videos" id="more-videos" name="more-videos" ><label
+                    for="more-videos">Add more videos</label><br>
+
+                    <input type="checkbox" value="additional-courses" id="additional-courses" name="additional-courses" >Additional courses<label
+                        for="additional-courses"></label><br>
+                    
+                <br>
+        </fieldset>
+
+        <label for="comment">Add comments or suggestions?</label>
+        <textarea rows="4" cols="50" id="comment" placeholder="Add your comment or suggestions here..."></textarea>
+        
+        <button type="submit" id="submit">Submit</button>
+
+
+        
+                    
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
